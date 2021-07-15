@@ -4,8 +4,8 @@ var cors = require('cors')
 var app = express()
 
 app.use(cors())
-const apiRoutes = require('./routes/api-routes');
-const usersRoutes = require('./routes/user-routes');
+const apiRoutes = require('./api-routes');
+const usersRoutes = require('./user-routes');
 //Uses=================
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
