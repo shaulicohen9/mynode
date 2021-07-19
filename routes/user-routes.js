@@ -16,12 +16,14 @@ router.post("/thelogin", async (req, res) => {
         if (x) {
             if (x.role === "admin") {
                 console.log("going to redirect-url");
-                res.redirect('/')
+                let myObj={whereToRedirect:'hello'};
+                res.json(myObj)
 
             }
             else if (x.role === "user") {
              
-                res.redirect('/')
+                let myObj={whereToRedirect:'hello'};
+                res.json(myObj)
 
             }
         }
