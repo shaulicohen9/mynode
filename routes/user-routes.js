@@ -16,14 +16,12 @@ router.post("/thelogin", async (req, res) => {
         if (x) {
             if (x.role === "admin") {
                 console.log("going to redirect-url");
-                res.redirect('https://www.google.com')
+                res.redirect('/')
 
             }
             else if (x.role === "user") {
-                // var path = require('path');
-                // res.sendFile(path.join(__dirname, '../welcomeUser.html'));
-                // res.redirect('/gameboard')
-                res.redirect('https://www.google.com')
+             
+                res.redirect('/')
 
             }
         }
