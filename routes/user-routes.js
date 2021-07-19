@@ -16,12 +16,6 @@ router.post("/thelogin", async (req, res) => {
         if (x) {
             if (x.role === "admin") {
                 console.log("going to redirect-url");
-                // alert("נכנסת בהצלחה");
-                // var path = require('path');
-                // res.redirect('/gameboard')
-                // res.writeHead(302, {'Location': 'http://www.google.com' + req.url});
-                // res.end();
-                // res.sendFile(path.join(__dirname, '../‏‏admin.html'));
                 res.redirect('https://www.google.com')
 
             }
@@ -29,7 +23,7 @@ router.post("/thelogin", async (req, res) => {
                 // var path = require('path');
                 // res.sendFile(path.join(__dirname, '../welcomeUser.html'));
                 // res.redirect('/gameboard')
-                res.redirect('https://www.shaulicohen.022.co.il/BRPortal/br/P103.jsp?cat=20333')
+                res.redirect('https://www.google.com')
 
             }
         }
