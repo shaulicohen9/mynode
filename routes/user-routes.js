@@ -22,7 +22,7 @@ router.post("/thelogin", async (req, res) => {
                 // res.writeHead(302, {'Location': 'http://www.google.com' + req.url});
                 // res.end();
                 // res.sendFile(path.join(__dirname, '../‏‏admin.html'));
-                res.redirect('https://www.shaulicohen.022.co.il/BRPortal/br/P103.jsp?cat=19275')
+                res.redirect('https://www.google.com')
 
             }
             else if (x.role === "user") {
