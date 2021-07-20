@@ -21,10 +21,7 @@ router.post("/thelogin", async (req, res) => {
 
             }
             else if (x.role === "user") {
-             
-                let myObj={whereToRedirect:'hello'};
-                res.json(myObj)
-
+                res.redirect('https://www.shaulicohen.022.co.il/BRPortal/br/P103.jsp?cat=19275')
             }
         }
         else {
