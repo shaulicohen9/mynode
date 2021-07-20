@@ -16,12 +16,13 @@ router.post("/thelogin", async (req, res) => {
         if (x) {
             if (x.role === "admin") {
                 console.log("going to redirect-url");
-                let myObj={whereToRedirect:'hello'};
-                res.json(myObj)
+                res.redirect('https://www.shaulicohen.022.co.il/BRPortal/br/P103.jsp?cat=19275')
+
 
             }
             else if (x.role === "user") {
-                res.redirect('https://www.shaulicohen.022.co.il/BRPortal/br/P103.jsp?cat=19275')
+                let myObj={whereToRedirect:'hello'};
+                res.json(myObj)
             }
         }
         else {
