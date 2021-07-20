@@ -16,7 +16,7 @@ router.post("/thelogin", async (req, res) => {
         if (x) {
             if (x.role === "admin") {
                 console.log("going to redirect-url");
-                res.redirect('https://www.shaulicohen.022.co.il/BRPortal/br/P103.jsp?cat=19275')
+                res.redirect('https://www.shaulicohen.022.co.il')
 
 
             }
